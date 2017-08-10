@@ -161,3 +161,29 @@ u }
 	text-align: center;
 
 }
+
+footer {
+	text-align: center;
+	background-color: gray;
+}
+
+#signInButton {
+	text-align: center;
+}
+
+.square-service-block{
+	position:relative;
+	overflow:hidden;
+	margin:15px auto;
+	padding: 70px 0px;
+}
+
+.gb {
+	display: flex;
+	align-items: center;
+	padding-left: 72px;
+}
+
+.foot {
+	text-align: center;
+}

@@ -11,7 +11,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-1 padding-top">
-			<form action="#" method = "post">
+			<form action= "{{url_for('editMenuItem', restaurant_id = item.restaurant_id, menu_id=item.id)}}" method = 'POST'>
 				<div class="form-group">
 					<label for="name">Name:</label>
 					<input type ="text" maxlength="100" class="form-control" name="name" value="{{item.name }}">
@@ -22,7 +22,7 @@
 					<label for="price">Price:</label>
 					<div class="input-group">
 						<div class="input-group-addon">$</div>
-						<input type ="text" maxlength="10" class="form-control" name="price" value="{{item.price}}">
+						<input type ="number" maxlength="10" class="form-control" name="price" step=".01" value="{{item.price}}">
 					</div>
 					<label for="course">Course:</label>
 					<div class="radio">
@@ -55,4 +55,5 @@
 			</form>
 		</div>
 	</div>
+{% include "footer.html" %}
 {% endblock %}
